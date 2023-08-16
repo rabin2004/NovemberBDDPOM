@@ -16,10 +16,11 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
+@Release1.0
 Feature: HomePage Menu links
 As a end user, I should be able to use all menu links in homepage.
 
+@Regression @Smoke @Sanity
 Scenario Outline: Positive homepage menu links test (other than Saved link)
 Given end user is in homepage
 When click on link "<link>"

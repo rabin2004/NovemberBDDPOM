@@ -17,6 +17,7 @@
 ## (Comments)
 #Sample Feature Definition Template
 
+@Release2.0
 Feature: Search functionality
 As a end user, I should be able to search for products.
 
@@ -46,6 +47,7 @@ As a end user, I should be able to search for products.
 #And hits Enter key
 #Then should see no result found error message should be displayed
 
+@Regression @E2E @Integration
 Scenario Outline: Positive search funtionality test by Data Driven
 Given end user is in homepage
 When enters a valid product "<validProduct>" search textbox
@@ -62,6 +64,7 @@ Examples:
 |lg|
 |macbook|
 
+@Regression @E2E @Integration @NewScenario
 Scenario Outline: Negative search funtionality test by Data Driven
 Given end user is in homepage
 When enters a invalid product "<invalidProduct>" search textbox
